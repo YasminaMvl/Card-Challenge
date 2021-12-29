@@ -1,0 +1,99 @@
+/*GENERAL*/
+div
+{
+    border: 1px solid hsl(244, 38%, 16%);
+}
+
+body
+{
+    box-sizing: content-box;
+    font-family: 'Inter' , sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background-color: #0a0c1b;
+    color: white;
+}
+.container
+{
+    max-width: 375px;
+    padding-bottom: 20px;
+    margin: 50px auto;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+}
+.image-container
+{
+    position: relative;
+    width: 375px;
+    height: 275px;
+}
+.container img
+{
+    display: block;
+    width: 375px;
+    height: 275px;
+    border-radius: 10px 10x 0 0;
+}
+.color-overlay
+{
+    position: absolute;
+    width: 375px;
+    height: 275px;
+    top: 0;
+    opacity: 0.5;
+    background-color:  hsl(277,84%,30%);
+    border-radius: 10px 10px 0 0;
+}
+h1 span
+{
+    color: hsl(277,64%,61%);
+}
+.description
+{
+    width: auto;
+    margin-bottom: 40px;
+    line-height: 1.5em;
+    font-family: 'Lexend Deca';
+    color: rgb(208,207,221);
+    font: 0.1em;
+}
+.stats-container
+{
+    width: 95%;
+    margin: 0 auto;
+}
+.stats-container p
+{
+    font-family: 'Lexend Deca';
+    text-transform: uppercase;
+    position: relative;
+    top: -10px;
+    font: 0.5em;
+    color: rgb(208,207,221);
+}
+
+@media(min-width:870px){
+
+  .card{
+    display:flex;
+    flex-direction: row-reverse;
+    width: 100vh;
+
+  }
+    
+.text-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 1;
+    width: 1fr;
+    height: auto;
+}
+.stats-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+}
